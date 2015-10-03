@@ -12,3 +12,5 @@ export default class Example extends Component {
     )
   }
 }
+
+__('bob')
