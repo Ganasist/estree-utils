@@ -1,11 +1,10 @@
 import AST from './esprima-ast-output';
+
 import {filter, map, compose, prop, head} from 'ramda';
+
 import getCallExpressions from './utils/getCallExpressions';
 import isGettextFunction from './utils/isGettextFunction';
-
-const getArguments = map(prop('arguments'));
-const getFirstValue = compose(prop('value'), head);
-const getFirstArgument = compose(map(getFirstValue),getArguments);
+import getFirstArgument from './utils/getFirstArgument';
 
 const callExpressions = getCallExpressions(AST);
 const gettextFunctions = filter(isGettextFunction, callExpressions);
