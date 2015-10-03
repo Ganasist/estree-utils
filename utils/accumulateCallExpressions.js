@@ -1,6 +1,5 @@
+import {curry} from 'ramda'
+import accumulateNodeType from './accumulateNodeType';
 import isCallExpression from './isCallExpression';
-import filterTree from './filterTree';
 
-export default function accumulateCallExpressions(accum, node){
-  return filterTree(isCallExpression, node).concat(accum);
-}
+export default curry(accumulateNodeType)(isCallExpression)
