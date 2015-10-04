@@ -1,3 +1,3 @@
-import {prop, equals, compose} form 'ramda';
+import {prop, equals, compose} from 'ramda';
 
 export default compose(equals('ExpressionStatement'), prop('type'));

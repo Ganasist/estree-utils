@@ -1,7 +1,7 @@
 {
-  "name": "esprima-webpack-fun",
+  "name": "esprima-loader-utils",
   "version": "0.1.0",
-  "description": "fun with esprima, webpack, and jsx",
+  "description": "functional utilities for parsing esprima ASTs",
   "main": "index.js",
   "scripts": {
     "start": "npm install && webpack index.jsx",
@@ -12,7 +12,8 @@
     "webpack",
     "jsx",
     "loader",
-    "ast"
+    "ast",
+    "ramda"
   ],
   "author": "Jonathan Huang <jonathan.huang@dailymotion.com>",
   "license": "MIT",
@@ -24,5 +25,8 @@
     "ramda": "^0.17.1",
     "react": "^0.13.3",
     "webpack": "^1.12.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0"
   }
 }

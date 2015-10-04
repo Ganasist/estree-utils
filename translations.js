@@ -1,12 +1,16 @@
 import AST from './esprima-ast-output';
 
-import {filter, map, compose, prop, head, reduce, curry, uniq} from 'ramda';
+import {filter, map, reduce, uniq} from 'ramda';
 
-import getCallExpressions from './utils/getCallExpressions';
-import isGettextFunction from './utils/isGettextFunction';
-import getFirstArgument from './utils/getFirstArgument';
-import accumulateJSXExpressions from './utils/accumulateJSXExpressions';
-import getTagName from './utils/getTagName';
+import {
+
+  getCallExpressions,
+  isGettextFunction,
+  getFirstArgument,
+  accumulateJSXExpressions,
+  getTagName
+
+} from './utils';
 
 const jsxExpressions = reduce(accumulateJSXExpressions, [], AST);
 const jsxTags = map(getTagName)(jsxExpressions);
