@@ -1,5 +1,5 @@
 {
-  "name": "esprima-loader-utils",
+  "name": "ast-utils-esprima",
   "version": "0.1.0",
   "description": "functional utilities for parsing esprima ASTs",
   "main": "index.js",
