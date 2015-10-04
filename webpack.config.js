@@ -4,7 +4,7 @@ var config = {
   debug: true,
 
   output: {
-    filename: 'bundle.js'
+    filename: './sources/bundle.js'
   },
 
   module: {

@@ -1,8 +1,6 @@
-# esprima-loader-playground
+# esprima-ast-utilities
 
-A simple Webpack loader that uses `esprima-fb` to parse `.jsx` files and outputs the AST in a file.
-
-Eventually I want to a loader that extracts out all gettext translations to create an `en.po` file.
+A utility library for parsing Esprima AST's. Written and intended to be used in a functional programming style. 
 
 ## Getting Started
 

@@ -4,7 +4,7 @@ var R = require('ramda');
 var fs = require('fs');
 var gulp = require('gulp');
 
-gulp.task('utils', () => {
+gulp.task('build', () => {
 
   fs.readdir('utils', (err, data) => {
     function removeIndexFile(files){
