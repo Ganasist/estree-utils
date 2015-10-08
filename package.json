@@ -2,9 +2,10 @@
   "name": "ast-utils-esprima",
   "version": "0.1.0",
   "description": "functional utilities for parsing esprima ASTs",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "start": "npm install && webpack index.jsx",
+    "start": "npm install && npm run build",
+    "build": "babel utils/ --out-dir dist/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
