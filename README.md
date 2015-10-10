@@ -1,6 +1,6 @@
-# ast-utils-esprima
+# ast-esprima-utils
 
-A utility library for parsing Esprima AST's. Written and intended to be used in a functional programming style. 
+A utility library for parsing Esprima AST's. Written and intended to be used in a functional programming style.
 
 ## Getting Started
 
