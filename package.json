@@ -1,6 +1,6 @@
 {
   "name": "ast-utils-esprima",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "functional utilities for parsing esprima ASTs",
   "main": "dist/index.js",
   "scripts": {
