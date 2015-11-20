@@ -29,6 +29,7 @@
   },
   "devDependencies": {
     "chai": "^3.4.1",
+    "esprima-pretty-print-loader": "^0.1.2",
     "gulp": "^3.9.0",
     "mocha": "^2.3.4"
   }

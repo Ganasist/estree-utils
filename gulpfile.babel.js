@@ -6,24 +6,34 @@ import gulp from 'gulp';
 
 gulp.task('build', () => {
 
-  fs.readdir('utils', (err, data) => {
+  fs.readdir('src', (err, data) => {
 
     function removeIndexFile(files){
-      let indexIndex = files.indexOf('index.js');
+      const indexIndex = files.indexOf('index.js');
       return remove(indexIndex, 1, files);
     }
 
+    function removeTestsFolder(files){
+      const testsIndex = files.indexOf('__tests__');
+      return remove(testsIndex, 1, files);
+    }
+
     function removeExtension(str){
-      let periodIndex = str.split('').indexOf('.');
+      const periodIndex = str.split('').indexOf('.');
       return str.substring(0, periodIndex);
     }
 
     function buildExportStatement(file){
-      return `export const ${file} = require('./${file}');\n`;
+      return `export ${file} from './${file}'\n`;
     }
 
-    const files = compose(map(buildExportStatement), map(removeExtension), removeIndexFile)(data);
+    const files = compose(
+      map(buildExportStatement),
+      map(removeExtension),
+      removeIndexFile,
+      removeTestsFolder
+    )(data);
 
-    fs.writeFileSync('./utils/index.js', files.join(''));
+    fs.writeFileSync('./src/index.js', files.join(''));
   });
 });

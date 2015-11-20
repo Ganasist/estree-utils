@@ -1,20 +1,20 @@
-export const accumulateCallExpressions = require('./accumulateCallExpressions');
-export const accumulateJSXExpressions = require('./accumulateJSXExpressions');
-export const accumulateNodeType = require('./accumulateNodeType');
-export const filterCallExpressions = require('./filterCallExpressions');
-export const filterTree = require('./filterTree');
-export const getArguments = require('./getArguments');
-export const getCallExpressions = require('./getCallExpressions');
-export const getFirstArgument = require('./getFirstArgument');
-export const getFirstValue = require('./getFirstValue');
-export const getTagName = require('./getTagName');
-export const isCallExpression = require('./isCallExpression');
-export const isExpression = require('./isExpression');
-export const isFunction = require('./isFunction');
-export const isGettextFunction = require('./isGettextFunction');
-export const isGettextMethod = require('./isGettextMethod');
-export const isJSXElement = require('./isJSXElement');
-export const isMethod = require('./isMethod');
-export const mapTree = require('./mapTree');
-export const normalizeExpressions = require('./normalizeExpressions');
-export const traverse = require('./traverse');
+export accumulateCallExpressions from './accumulateCallExpressions'
+export accumulateJSXExpressions from './accumulateJSXExpressions'
+export accumulateNodeType from './accumulateNodeType'
+export filterCallExpressions from './filterCallExpressions'
+export filterTree from './filterTree'
+export getArguments from './getArguments'
+export getCallExpressions from './getCallExpressions'
+export getFirstArgument from './getFirstArgument'
+export getFirstValue from './getFirstValue'
+export getTagName from './getTagName'
+export isCallExpression from './isCallExpression'
+export isExpression from './isExpression'
+export isFunction from './isFunction'
+export isGettextFunction from './isGettextFunction'
+export isGettextMethod from './isGettextMethod'
+export isJSXElement from './isJSXElement'
+export isMethod from './isMethod'
+export mapTree from './mapTree'
+export normalizeExpressions from './normalizeExpressions'
+export traverse from './traverse'
