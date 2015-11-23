@@ -1,15 +1,20 @@
-var config = {
+module.exports = {
 
   devtool: 'eval',
   debug: true,
+  target: 'node',
 
   output: {
-    filename: './sources/bundle.js'
+    filename: './.tmp/bundle.js'
   },
 
   module: {
     loaders: [
-      { test: /\.jsx?$/, exclude: /(node_modules)/, loaders: ['babel', 'esprima-loader'] }
+      {
+        test: /\.jsx?$/,
+        exclude: /(node_modules)/,
+        loaders: ['babel', 'esprima-pretty?-print,+write,+export']
+      }
     ]
   },
 
@@ -17,5 +22,3 @@ var config = {
     extensions: ['', '.js', '.jsx'],
   }
 }
-
-module.exports = config;
