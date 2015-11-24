@@ -1,9 +1,15 @@
+import {curry} from 'ramda';
 import mapTree from './mapTree';
 
-export default function filterTree(condition, object){
-  return mapTree((node) => {
+const filterTree = (condition, tree) => {
+
+  const filter = mapTree((node) => {
     if (condition(node)){
       return node;
     }
-  }, object);
+  });
+
+  return filter(tree);
 }
+
+export default curry(filterTree)
