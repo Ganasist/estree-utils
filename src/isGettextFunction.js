@@ -1,4 +1,4 @@
 import {curry} from 'ramda';
-import isFunction from './isFunction';
+import isFunctionNamed from './isFunctionNamed';
 
-export default curry(isFunction)('__');
+export default curry(isFunctionNamed)('__');
