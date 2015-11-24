@@ -1,2 +1,1 @@
-var a = 'hello'
-var b = 'bob'
+var a = __('hello')

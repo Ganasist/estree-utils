@@ -6,12 +6,24 @@ describe('traverse', () => {
   it('visits every node with a semantic type', () => {
     let visited = 0
     traverse((node) => visited++, AST.body);
-    expect(visited).to.be.equal(2);
+    expect(visited).to.be.equal(8);
   });
 
   it('applies an iterator to every visited node', () => {
     let accum = []
     traverse((node) => accum.push(node.type), AST.body);
-    expect(accum).to.be.deep.equal(['VariableDeclaration', 'VariableDeclaration']);
+
+    const types = [
+      "VariableDeclaration",
+      "VariableDeclarator",
+      "Identifier",
+      "Literal",
+      "VariableDeclaration",
+      "VariableDeclarator",
+      "Identifier",
+      "Literal"
+    ]
+
+    expect(accum).to.be.deep.equal(types);
   });
 });
