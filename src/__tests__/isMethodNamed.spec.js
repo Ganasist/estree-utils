@@ -26,5 +26,4 @@ describe('isMethodNamed', () => {
   it('returns false if node does not have a method named like the argument', () => {
     expect(isMethodNamed('bye')(node)).to.be.false;
   });
-
 });
