@@ -9,7 +9,7 @@ var node = {
   }
 }
 
-describe('isJSXExpression function', () => {
+describe('isJSXExpression', () => {
   it('returns true if node is a JSX Expression Container', () => {
     expect(isJSXExpression(node)).to.be.true;
   });
