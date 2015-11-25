@@ -1,10 +1,10 @@
 import {expect} from 'chai';
 import {all, concat} from 'ramda';
-import filterTreeForCallExpressions from '../filterTreeForCallExpressions';
-import filterTreeForFunctionsNamed from '../filterTreeForFunctionsNamed';
-import isCallExpression from '../isCallExpression';
-import ASTJSX from './sources/ast-example';
-import ASTJS from './sources/ast-small-example';
+import filterTreeForCallExpressions from 'src/filterTreeForCallExpressions';
+import filterTreeForFunctionsNamed from 'src/filterTreeForFunctionsNamed';
+import isCallExpression from 'src/isCallExpression';
+import ASTJSX from 'assets/ast-example';
+import ASTJS from 'assets/ast-small-example';
 
 describe('filterTreeForCallExpressions', () => {
   const output = concat(

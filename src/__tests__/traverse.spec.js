@@ -1,6 +1,6 @@
 import {expect} from 'chai';
-import traverse from '../traverse';
-import AST from './sources/ast-mini-example';
+import traverse from 'src/traverse';
+import AST from 'assets/ast-mini-example';
 
 describe('traverse', () => {
   it('visits every node with a semantic type', () => {

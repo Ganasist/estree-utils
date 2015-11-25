@@ -1,7 +1,7 @@
 import {expect} from 'chai';
 import {compose, equals, all, prop} from 'ramda';
-import filterTree from '../filterTree';
-import AST from './sources/ast-small-example';
+import filterTree from 'src/filterTree';
+import AST from 'assets/ast-small-example';
 
 describe('filterTree', () => {
 

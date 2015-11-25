@@ -1,5 +1,5 @@
 import {expect} from 'chai';
-import isJSXExpression from '../isJSXExpression';
+import isJSXExpression from 'src/isJSXExpression';
 
 var node = {
   "type": "JSXExpressionContainer",

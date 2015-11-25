@@ -1,4 +1,4 @@
-import {curry, compose, filter, or} from 'ramda';
+import {compose, filter, or} from 'ramda';
 import filterTreeForCallExpressions from './filterTreeForCallExpressions';
 import isMethodOrFunctionNamed from './isMethodOrFunctionNamed';
 
@@ -7,4 +7,4 @@ const filterTreeForMethodsAndFunctionsNamed = (name) => compose(
   filterTreeForCallExpressions
 );
 
-export default curry(filterTreeForMethodsAndFunctionsNamed);
+export default filterTreeForMethodsAndFunctionsNamed;

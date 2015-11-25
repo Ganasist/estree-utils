@@ -1,5 +1,5 @@
 import {expect} from 'chai';
-import isExpressionStatement from '../isExpressionStatement';
+import isExpressionStatement from 'src/isExpressionStatement';
 
 var node = {
   "type": "ExpressionStatement",

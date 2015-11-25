@@ -1,10 +1,10 @@
 import {expect} from 'chai';
 import {all} from 'ramda';
-import filterTreeforExpressionStatements from '../filterTreeforExpressionStatements';
-import isJSXExpression from '../isJSXExpression';
-import isExpressionStatement from '../isExpressionStatement';
-import ASTJSX from './sources/ast-example';
-import ASTJS from './sources/ast-small-example';
+import filterTreeforExpressionStatements from 'src/filterTreeforExpressionStatements';
+import isJSXExpression from 'src/isJSXExpression';
+import isExpressionStatement from 'src/isExpressionStatement';
+import ASTJSX from 'assets/ast-example';
+import ASTJS from 'assets/ast-small-example';
 
 describe('filterTreeforExpressionStatements', () => {
 

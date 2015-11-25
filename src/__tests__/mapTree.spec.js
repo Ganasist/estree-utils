@@ -1,6 +1,6 @@
 import {expect} from 'chai';
-import mapTree from '../mapTree';
-import AST from './sources/ast-small-example';
+import mapTree from 'src/mapTree';
+import AST from 'assets/ast-small-example';
 
 describe('mapTree', () => {
 

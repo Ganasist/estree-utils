@@ -1,5 +1,5 @@
 import {expect} from 'chai';
-import isFunctionNamed from '../isFunctionNamed';
+import isFunctionNamed from 'src/isFunctionNamed';
 
  const node = {
   "type": "CallExpression",

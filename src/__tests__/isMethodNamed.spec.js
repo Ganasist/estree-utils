@@ -1,5 +1,5 @@
 import {expect} from 'chai';
-import isMethodNamed from '../isMethodNamed';
+import isMethodNamed from 'src/isMethodNamed';
 
 // An Expression Statement
 var node = {
