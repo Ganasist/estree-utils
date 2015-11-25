@@ -4,7 +4,7 @@
   "description": "Functional utilities for parsing JS ASTs",
   "main": "dist/index.js",
   "scripts": {
-    "build": "gulp build && NODE_PATH=./ babel src/ --out-dir dist/",
+    "build": "gulp build && NODE_PATH=./ babel src/ --out-dir src/",
     "test": "NODE_PATH=./ mocha --compilers js:babel-core/register ./tests/**/*.spec.js"
   },
   "keywords": [

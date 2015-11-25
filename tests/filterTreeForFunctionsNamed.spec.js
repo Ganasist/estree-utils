@@ -1,7 +1,7 @@
 import {expect} from 'chai';
 import {all, filter} from 'ramda';
-import filterTreeForFunctionsNamed from 'dist/filterTreeForFunctionsNamed';
-import isFunctionNamed from 'dist/isFunctionNamed';
+import filterTreeForFunctionsNamed from 'src/filterTreeForFunctionsNamed';
+import isFunctionNamed from 'src/isFunctionNamed';
 import ASTJX from 'assets/ast-example';
 import ASTJS from 'assets/ast-small-example';
 

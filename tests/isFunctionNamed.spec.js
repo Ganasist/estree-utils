@@ -1,5 +1,5 @@
 import {expect} from 'chai';
-import isFunctionNamed from 'dist/isFunctionNamed';
+import isFunctionNamed from 'src/isFunctionNamed';
 
  const node = {
   "type": "CallExpression",
@@ -22,5 +22,10 @@ describe('isFunctionNamed', () => {
 
   it('throws an error if the argument is not a string', () => {
     expect(() => isFunctionNamed(this)).to.throw(Error)
-  })
+  });
+
+  it('can take multiple name arguments', () => {
+    const isMathFunction = isFunctionNamed('multiply', 'minus', 'divide', 'add');
+    expect(isMathFunction(node)).to.be.true;
+  });
 });

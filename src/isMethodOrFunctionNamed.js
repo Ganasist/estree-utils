@@ -1,9 +1,8 @@
-import {curry, or} from 'ramda';
 import isMethodNamed from './isMethodNamed';
 import isFunctionNamed from './isFunctionNamed';
 
-const isMethodOrFunctionNamed = (name, node) => (
-  isMethodNamed(name)(node) || isFunctionNamed(name)(node)
+const isMethodOrFunctionNamed = (...names) => (node) => (
+  isMethodNamed(...names)(node) || isFunctionNamed(...names)(node)
 )
 
-export default curry(isMethodOrFunctionNamed);
+export default isMethodOrFunctionNamed;
