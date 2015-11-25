@@ -1,7 +1,7 @@
 import {expect} from 'chai';
 import {all, filter} from 'ramda';
-import filterTreeForMethodsNamed from 'src/filterTreeForMethodsNamed';
-import isMethodNamed from 'src/isMethodNamed';
+import filterTreeForMethodsNamed from 'dist/filterTreeForMethodsNamed';
+import isMethodNamed from 'dist/isMethodNamed';
 import ASTJX from 'assets/ast-example';
 import ASTJS from 'assets/ast-small-example';
 

@@ -1,5 +1,5 @@
 import {expect} from 'chai';
-import mapTree from 'src/mapTree';
+import mapTree from 'dist/mapTree';
 import AST from 'assets/ast-small-example';
 
 describe('mapTree', () => {

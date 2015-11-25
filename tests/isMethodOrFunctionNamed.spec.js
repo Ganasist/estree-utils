@@ -1,5 +1,5 @@
 import {expect} from 'chai';
-import isMethodOrFunctionNamed from 'src/isMethodOrFunctionNamed';
+import isMethodOrFunctionNamed from 'dist/isMethodOrFunctionNamed';
 
 const isAdd = isMethodOrFunctionNamed('add');
 

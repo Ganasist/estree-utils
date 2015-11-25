@@ -1,8 +1,8 @@
 import {expect} from 'chai';
 import {all} from 'ramda';
-import filterTreeforExpressionStatements from 'src/filterTreeforExpressionStatements';
-import isJSXExpression from 'src/isJSXExpression';
-import isExpressionStatement from 'src/isExpressionStatement';
+import filterTreeforExpressionStatements from 'dist/filterTreeforExpressionStatements';
+import isJSXExpression from 'dist/isJSXExpression';
+import isExpressionStatement from 'dist/isExpressionStatement';
 import ASTJSX from 'assets/ast-example';
 import ASTJS from 'assets/ast-small-example';
 

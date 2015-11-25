@@ -1,5 +1,5 @@
 import {expect} from 'chai';
-import mapExpression from 'src/mapExpression';
+import mapExpression from 'dist/mapExpression';
 
 var node = {
   "type": "ExpressionStatement",

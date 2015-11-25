@@ -1,5 +1,5 @@
 import {expect} from 'chai';
-import isJSXElement from 'src/isJSXElement';
+import isJSXElement from 'dist/isJSXElement';
 
 var node = {
   "type": "JSXElement",

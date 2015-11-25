@@ -1,8 +1,8 @@
 import {expect} from 'chai';
 import {all, concat} from 'ramda';
-import filterTreeForCallExpressions from 'src/filterTreeForCallExpressions';
-import filterTreeForFunctionsNamed from 'src/filterTreeForFunctionsNamed';
-import isCallExpression from 'src/isCallExpression';
+import filterTreeForCallExpressions from 'dist/filterTreeForCallExpressions';
+import filterTreeForFunctionsNamed from 'dist/filterTreeForFunctionsNamed';
+import isCallExpression from 'dist/isCallExpression';
 import ASTJSX from 'assets/ast-example';
 import ASTJS from 'assets/ast-small-example';
 

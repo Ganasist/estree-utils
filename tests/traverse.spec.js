@@ -1,5 +1,5 @@
 import {expect} from 'chai';
-import traverse from 'src/traverse';
+import traverse from 'dist/traverse';
 import AST from 'assets/ast-mini-example';
 
 describe('traverse', () => {
