@@ -1,6 +1,6 @@
-# ast-esprima-utils
+# estree-utils
 
-A utility library for parsing Esprima AST's. Written and intended to be used in a functional programming style.
+A functional utility library for parsing JS AST's like Esprima style.
 
 # API
 
