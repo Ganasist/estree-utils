@@ -1,7 +1,7 @@
 # estree-utils
 [![Build Status](https://travis-ci.org/mrblueblue/estree-utils.svg?branch=master)](https://travis-ci.org/mrblueblue/estree-utils)
 
-A functional utility library for parsing JS AST's like Esprima style.
+Utility functions for parsing Javascript AST's like Esprima.
 
 # API
 
@@ -19,7 +19,7 @@ A functional utility library for parsing JS AST's like Esprima style.
 * isJSXElement
 * isJSXExpression
 * isMemberExpression
-* isMethodNamed amed'
+* isMethodNamed
 * isMethodOrFunctionNamed
 * mapArguments
 * mapExpression
