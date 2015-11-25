@@ -1,7 +1,7 @@
 import {expect} from 'chai';
 import isFunctionNamed from '../isFunctionNamed';
 
-var node = {
+ const node = {
   "type": "CallExpression",
   "callee": {
     "type": "Identifier",
@@ -11,12 +11,12 @@ var node = {
 
 describe('isFunctionNamed', () => {
   it('returns true if function node has the same name as the argument', () => {
-    var isAddFunction = isFunctionNamed('add');
+    const isAddFunction = isFunctionNamed('add');
     expect(isAddFunction(node)).to.be.true;
   });
 
   it('return false if function not does not have the same name as argument', () => {
-    var isMinusFunction = isFunctionNamed('minus');
+    const isMinusFunction = isFunctionNamed('minus');
     expect(isMinusFunction(node)).to.be.false;
   });
 
