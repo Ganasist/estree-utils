@@ -3,6 +3,8 @@
 import {map, remove, compose} from 'ramda';
 import fs from 'fs';
 import gulp from 'gulp';
+import gulpDocDown from 'gulp-docdown';
+import rename from 'gulp-rename';
 
 gulp.task('build', () => {
 
@@ -37,3 +39,20 @@ gulp.task('build', () => {
     fs.writeFileSync('./src/index.js', files.join(''));
   });
 });
+
+gulp.task('gulpDocDown', () => {
+    var outputType = 'md';
+    gulp.src('./src/*.js')
+    .pipe(gulpDocDown({
+        title: 'API documentation / {fileName}',
+        url: 'https://github.com/xxx/xxx/blob/master/{filePath}',
+        toc: 'categories',
+        outputType : outputType
+    }))
+    .pipe(rename({
+        extname: '.' + outputType
+    }))
+    .pipe(gulp.dest('./docs'));
+});
+
+gulp.task('default', ['gulpDocDown']);
