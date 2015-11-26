@@ -16,8 +16,8 @@ var _isMethodNamed2 = _interopRequireDefault(_isMethodNamed);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var filterTreeForMethodsNamed = function filterTreeForMethodsNamed(name) {
-  return (0, _ramda.compose)((0, _ramda.filter)((0, _isMethodNamed2.default)(name)), _filterTreeForCallExpressions2.default);
+var filterTreeForMethodsNamed = function filterTreeForMethodsNamed() {
+  return (0, _ramda.compose)((0, _ramda.filter)(_isMethodNamed2.default.apply(undefined, arguments)), _filterTreeForCallExpressions2.default);
 };
 
 exports.default = (0, _ramda.curry)(filterTreeForMethodsNamed);

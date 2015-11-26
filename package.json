@@ -1,10 +1,11 @@
 {
   "name": "estree-utils",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Functional utilities for parsing JS ASTs",
   "main": "dist/index.js",
   "scripts": {
-    "build": "gulp build && NODE_PATH=./ babel src/ --out-dir src/",
+    "clean": "rimraf ./dist",
+    "build": "gulp build && NODE_PATH=./ babel src/ --out-dir dist/",
     "test": "NODE_PATH=./ mocha --compilers js:babel-core/register ./tests/**/*.spec.js"
   },
   "keywords": [
@@ -38,6 +39,7 @@
     "gulp-docdown": "^0.1.11",
     "gulp-rename": "^1.2.2",
     "mocha": "^2.3.4",
+    "rimraf": "^2.4.4",
     "webpack": "^1.12.2"
   },
   "peerDependencies": {

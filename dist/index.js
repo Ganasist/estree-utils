@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.traverse = exports.mapValues = exports.mapTree = exports.mapFirstArgument = exports.mapExpression = exports.mapArguments = exports.isMethodOrFunctionNamed = exports.isMethodNamed = exports.isMemberExpression = exports.isJSXExpression = exports.isJSXElement = exports.isGettextMethod = exports.isGettextFunction = exports.isFunctionNamed = exports.isExpressionStatement = exports.isCallExpression = exports.filterTreeForMethodsNamed = exports.filterTreeForMethodsAndFunctionsNamed = exports.filterTreeForFunctionsNamed = exports.filterTreeForExpressionStatements = exports.filterTreeForCallExpressions = exports.filterTree = undefined;
+exports.traverse = exports.mapValues = exports.mapTree = exports.mapExpression = exports.isMethodOrFunctionNamed = exports.isMethodNamed = exports.isMemberExpression = exports.isJSXExpression = exports.isJSXElement = exports.isFunctionNamed = exports.isExpressionStatement = exports.isCallExpression = exports.filterTreeForMethodsNamed = exports.filterTreeForMethodsAndFunctionsNamed = exports.filterTreeForFunctionsNamed = exports.filterTreeForExpressionStatements = exports.filterTreeForCallExpressions = exports.filterTree = undefined;
 
 var _filterTree2 = require('./filterTree');
 
@@ -41,14 +41,6 @@ var _isFunctionNamed2 = require('./isFunctionNamed');
 
 var _isFunctionNamed3 = _interopRequireDefault(_isFunctionNamed2);
 
-var _isGettextFunction2 = require('./isGettextFunction');
-
-var _isGettextFunction3 = _interopRequireDefault(_isGettextFunction2);
-
-var _isGettextMethod2 = require('./isGettextMethod');
-
-var _isGettextMethod3 = _interopRequireDefault(_isGettextMethod2);
-
 var _isJSXElement2 = require('./isJSXElement');
 
 var _isJSXElement3 = _interopRequireDefault(_isJSXElement2);
@@ -69,17 +61,9 @@ var _isMethodOrFunctionNamed2 = require('./isMethodOrFunctionNamed');
 
 var _isMethodOrFunctionNamed3 = _interopRequireDefault(_isMethodOrFunctionNamed2);
 
-var _mapArguments2 = require('./mapArguments');
-
-var _mapArguments3 = _interopRequireDefault(_mapArguments2);
-
 var _mapExpression2 = require('./mapExpression');
 
 var _mapExpression3 = _interopRequireDefault(_mapExpression2);
-
-var _mapFirstArgument2 = require('./mapFirstArgument');
-
-var _mapFirstArgument3 = _interopRequireDefault(_mapFirstArgument2);
 
 var _mapTree2 = require('./mapTree');
 
@@ -104,16 +88,12 @@ exports.filterTreeForMethodsNamed = _filterTreeForMethodsNamed3.default;
 exports.isCallExpression = _isCallExpression3.default;
 exports.isExpressionStatement = _isExpressionStatement3.default;
 exports.isFunctionNamed = _isFunctionNamed3.default;
-exports.isGettextFunction = _isGettextFunction3.default;
-exports.isGettextMethod = _isGettextMethod3.default;
 exports.isJSXElement = _isJSXElement3.default;
 exports.isJSXExpression = _isJSXExpression3.default;
 exports.isMemberExpression = _isMemberExpression3.default;
 exports.isMethodNamed = _isMethodNamed3.default;
 exports.isMethodOrFunctionNamed = _isMethodOrFunctionNamed3.default;
-exports.mapArguments = _mapArguments3.default;
 exports.mapExpression = _mapExpression3.default;
-exports.mapFirstArgument = _mapFirstArgument3.default;
 exports.mapTree = _mapTree3.default;
 exports.mapValues = _mapValues3.default;
 exports.traverse = _traverse3.default;
