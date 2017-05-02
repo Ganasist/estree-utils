@@ -44,6 +44,6 @@
   },
   "peerDependencies": {
     "i18n": "^0.5.0",
-    "react": "^0.13.3"
+    "react": ">0.13.3"
   }
 }
